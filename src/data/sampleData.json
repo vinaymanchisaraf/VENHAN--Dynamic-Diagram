@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": { "x": 100, "y": 100 },
+      "data": { 
+        "label": "Start Node",
+        "description": "This is the starting point",
+        "color": "#ff6b6b"
+      }
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": { "x": 400, "y": 100 },
+      "data": { 
+        "label": "Process Node",
+        "description": "This is a processing step",
+        "color": "#4ecdc4"
+      }
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": { "x": 700, "y": 100 },
+      "data": { 
+        "label": "End Node",
+        "description": "This is the end point",
+        "color": "#45b7d1"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1-2",
+      "source": "1",
+      "target": "2",
+      "label": "Next Step",
+      "type": "smoothstep"
+    },
+    {
+      "id": "e2-3",
+      "source": "2",
+      "target": "3",
+      "label": "Final Step",
+      "type": "smoothstep"
+    }
+  ]
+}
